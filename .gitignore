@@ -1,0 +1,7 @@
+job_config.yml
+dist/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg

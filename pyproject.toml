@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+include-package-data = true
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+my_pkg = ["*.yml"]
+[project]
+name = "my_pkg"
+authors = [
+    {name = "Ramin Vali", email = "r.vali@ieee.org"},
+]
+description = "Simple non-flat python package"
+version = "0.1.0"
+dependencies = ["pyyaml"]
+requires-python = ">=3.10.0"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
